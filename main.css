@@ -1,1 +1,10 @@
-/* add your styles here */
+
+.primary{
+position: absolute;
+z-index: 1;
+}
+
+.secondary{
+position: absolute;
+z-index: auto;
+}
