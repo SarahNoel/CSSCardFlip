@@ -1,10 +1,36 @@
 
 .primary{
-position: absolute;
-z-index: 1;
-}
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+-webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+
+  }
+
 
 .secondary{
-position: absolute;
-z-index: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+-webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+        -webkit-transform: rotateY(-180deg);
+         transform: rotateY(-180deg);
+}
+
+
+:hover .primary {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+:hover .secondary {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
 }
