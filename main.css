@@ -1,7 +1,6 @@
 .portfolio-item {
   transition: 0.6s;
     transform-style: preserve-3d;
-    position: relative;
 }
 
 .portfolio-item:hover {
@@ -11,16 +10,7 @@
 /* hide back of pane during swap */
 .primary, .secondary {
     backface-visibility: hidden;
-
     position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* front pane, placed above back */
-.primary{
-    z-index: 2;
-    transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
